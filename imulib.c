@@ -137,12 +137,12 @@ void MEMS_Init(void)
 	if(MEMS_Init_Control(&mems)== HAL_OK)
 	{
 	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_10,GPIO_PIN_SET);
-	mems.Init.Axes			  = ACC_Axes_Enable_Active;
-	mems.Init.DataRate		= ACC_Date_Rate_200HZ;
+	mems.Init.Axes			  	= ACC_Axes_Enable_Active;
+	mems.Init.DataRate			= ACC_Date_Rate_200HZ;
 	mems.Init.Power  			= ACC_Low_Power_Mod_DeActive;
-	mems.Init.Resolution  = ACC_High_Resolution_Active;	
-	mems.Init.Scale			  = ACC_SCALE_2G;
-  mems.Init.BlockData		= ACC_Block_Data_DeActive;
+	mems.Init.Resolution  		= ACC_High_Resolution_Active;	
+	mems.Init.Scale			    = ACC_SCALE_2G;
+  mems.Init.BlockData		    = ACC_Block_Data_DeActive;
 	mems.Init.Big_Little_Endian = ACC_Little_Endian;
 		
 		
